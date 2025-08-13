@@ -41,7 +41,7 @@ var Module=typeof Module!=="undefined"?Module:{};Module["MindARFace"] = {
     GetExternalJS: function (url) {
       return new Promise((resolve) => {
 	  //"https://demo.xuefei.net.cn/WebAR/StreamingAssets/mind-ar1.2.3/mindar-face.prod.js"
-        const SCRIPT_URL = UTF8ToString(url);
+        SCRIPT_URL = UTF8ToString(url);
         console.log("get external js...", SCRIPT_URL);
   
         let script = document.querySelector(`script[src="${SCRIPT_URL}"]`);
@@ -277,7 +277,7 @@ Module["MindARImage"] = {
   GetExternalJS: function (url) {
     return new Promise((resolve) => {
 	//"https://demo.xuefei.net.cn/WebAR/StreamingAssets/mind-ar1.2.3/mindar-image.prod.js"
-      const SCRIPT_URL = UTF8ToString(url);
+      SCRIPT_URL = UTF8ToString(url);
       console.log("get external js...", SCRIPT_URL);
 
       let script = document.querySelector(`script[src="${SCRIPT_URL}"]`);
