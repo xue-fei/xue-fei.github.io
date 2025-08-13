@@ -4310,7 +4310,7 @@ class uB {
   constructor(U) {
     this.detectResolve = null;
     let G = pB.FaceMesh;
-    G === void 0 && (console.log("FaceMesh undefined, using window.FaceMesh"), G = window.FaceMesh), this.faceMesh = new G({ locateFile: (e) => `https://demo.xuefei.net.cn/WebAR/StreamingAssets/mind-ar1.2.3/${e}` }), console.log("flipFace", U), this.faceMesh.setOptions({
+    G === void 0 && (console.log("FaceMesh undefined, using window.FaceMesh"), G = window.FaceMesh), this.faceMesh = new G({ locateFile: (e) => `https://xue-fei.github.io/StreamingAssets/mind-ar1.2.3/${e}` }), console.log("flipFace", U), this.faceMesh.setOptions({
       maxNumFaces: 1,
       //refineLandmarks: true,
       refineLandmarks: !1,
